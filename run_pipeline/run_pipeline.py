@@ -17,8 +17,8 @@ def run_step(description, command_list):
 
 print("📊 Starting Customer Churn Prediction Full Pipeline")
 
-venv_python = os.path.join(BASE_DIR, "venv", "Scripts", "python.exe")
-streamlit_exe = os.path.join(BASE_DIR, "venv", "Scripts", "streamlit.exe")
+venv_python = os.path.join(BASE_DIR, ".venv", "Scripts", "python.exe")
+streamlit_exe = os.path.join(BASE_DIR, ".venv", "Scripts", "streamlit.exe")
 
 run_step("Running Data Preprocessing", [venv_python, os.path.join(BASE_DIR, "src", "data_preprocessing.py")])
 run_step("Running EDA", [venv_python, os.path.join(BASE_DIR, "src", "eda.py")])
