@@ -1,0 +1,7 @@
+# Force GitHub to count repo as Python
+*.py linguist-language=Python
+
+# Ignore frontend files from language stats
+*.html linguist-detectable=false
+*.css  linguist-detectable=false
+*.js   linguist-detectable=false
